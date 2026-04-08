@@ -1,178 +1,69 @@
-<!DOCTYPE html><html lang="bn">
+<!-- =========================
+Newsora BD - 3D Modern News Website Pack
+Founder: ইমরান হোসাইন মাহি
+10 HTML Templates
+========================= --><!-- =========================
+1. index.html (Homepage)
+========================= --><!DOCTYPE html><html lang="bn">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Newsora BD - Modern News Portal</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f4f6fb;color:#111;transition:.3s}
-.dark{background:#0f172a;color:#fff}
-
-header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 30px;
-background:linear-gradient(90deg,#0b3c8c,#e11d2e);
-color:#fff
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:700;
-font-size:22px
-}
-
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:white;
-font-weight:500
-}
-
-.breaking{
-background:red;
-color:white;
-padding:8px 20px;
-font-weight:600;
-animation:blink 1s infinite alternate
-}
-
-@keyframes blink{
-from{opacity:.7}
-to{opacity:1}
-}
-
-.hero{
-height:320px;
-background:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c') center/cover;
-display:flex;
-align-items:end
-}
-.hero h1{
-background:rgba(0,0,0,.6);
-color:white;
-padding:15px 25px;
-margin:20px;
-border-radius:10px
-}
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsora BD</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+body{background:#eef2ff}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;background:linear-gradient(90deg,#0b3c8c,#e11d2e);color:#fff}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px}
+nav a{color:white;margin-left:20px;text-decoration:none}
+.hero{height:300px;background:linear-gradient(135deg,#0b3c8c,#e11d2e);display:flex;align-items:center;justify-content:center;color:white;font-size:28px}
 .container{padding:25px}
-
-.grid{
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:20px
-}
-
-.news-card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-margin-bottom:20px
-}
-
-.dark .news-card{background:#1e293b}
-
-.news-card img{
-width:100%;
-height:220px;
-object-fit:cover
-}
-
-.news-card .content{
-padding:15px
-}
-
-.sidebar .widget{
-background:white;
-padding:15px;
-border-radius:15px;
-margin-bottom:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.06)
-}
-
-.dark .sidebar .widget{background:#1e293b}
-
-.video-section iframe{
-width:100%;
-height:300px;
-border-radius:15px
-}
-
-.footer{
-background:#111;
-color:white;
-padding:30px;
-margin-top:40px
-}
-
-.toggle{
-cursor:pointer;
-padding:6px 12px;
-background:white;
-color:black;
-border-radius:6px;
-font-size:14px
-}
-
-@media(max-width:900px){
-.grid{grid-template-columns:1fr}
-.hero{height:200px}
-}
-</style></head>
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.15);transform:translateY(0);transition:.3s}
+.card:hover{transform:translateY(-10px) scale(1.02)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card h3{padding:15px}
+.footer{background:#111;color:white;text-align:center;padding:40px;font-size:22px}
+</style>
+</head>
 <body><header>
 <div class="logo">
-<img src="logo.png" height="35">
+<img src="https://raw.githubusercontent.com/imranmahi529/-/refs/heads/main/20260409_020034.png" height="40">
 Newsora BD
-</div><nav>
-<a href="#">হোম</a>
-<a href="#">বাংলাদেশ</a>
-<a href="#">সিলেট</a>
-<a href="#">খেলাধুলা</a>
-<a href="#">ভিডিও</a>
-</nav><div class="toggle" onclick="toggleDark()">Dark</div>
-</header><div class="breaking">🔴 Breaking News: Newsora BD লাইভ আপডেট</div><section class="hero">
-<h1>শিরোনাম: আপনার প্রধান সংবাদ এখানে</h1>
-</section><div class="container">
-<div class="grid"><div><div class="news-card">
-<img src="https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9">
-<div class="content">
-<h3>ব্রেকিং নিউজ শিরোনাম</h3>
-<p>সংবাদ বিবরণ এখানে লিখুন...</p>
 </div>
-</div><div class="news-card">
-<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c">
-<div class="content">
-<h3>সিলেট আপডেট</h3>
-<p>স্থানীয় খবর এখানে...</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Bangladesh</a>
+<a href="#">Sylhet</a>
+<a href="#">Video</a>
+</nav>
+</header><div class="hero">3D Modern News Portal</div><div class="container">
+<div class="grid">
+<div class="card"><img src="https://picsum.photos/400/300"><h3>Breaking News Headline</h3></div>
+<div class="card"><img src="https://picsum.photos/401/300"><h3>Politics News</h3></div>
+<div class="card"><img src="https://picsum.photos/402/300"><h3>Sports Update</h3></div>
 </div>
-</div><div class="video-section">
-<h2>📺 Live TV</h2>
-<iframe src="https://www.youtube.com/embed/live_stream?channel=UC4R8DWoMoI7CAwX8_LjQHig"></iframe>
-</div></div><div class="sidebar"><div class="widget">
-<h3>সর্বশেষ খবর</h3>
-<ul>
-<li>আপডেট ১</li>
-<li>আপডেট ২</li>
-<li>আপডেট ৩</li>
-</ul>
-</div><div class="widget">
-<h3>ভিডিও নিউজ</h3>
-<iframe width="100%" height="180" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-</div><div class="widget">
-<h3>Follow</h3>
-<p>Facebook | YouTube | TikTok</p>
-</div></div></div>
 </div><div class="footer">
-<h2>Newsora BD</h2>
-<p>© 2026 All Rights Reserved</p>
-</div><script>
-function toggleDark(){
-document.body.classList.toggle('dark')
-}
-</script></body>
-</html>
+প্রতিষ্ঠাতা: ইমরান হোসাইন মাহি
+</div></body>
+</html><!-- =========================
+2. category.html
+========================= --><!DOCTYPE html><html><head><title>Category</title></head>
+<body><h1>Category Page - 3D Style</h1></body></html><!-- =========================
+3. article.html
+========================= --><!DOCTYPE html><html><head><title>Article</title></head>
+<body><h1>Full Article Page</h1></body></html><!-- =========================
+4. video.html
+========================= --><!DOCTYPE html><html><body><h1>Video News Page</h1></body></html><!-- =========================
+5. live.html
+========================= --><!DOCTYPE html><html><body><h1>Live TV Page</h1></body></html><!-- =========================
+6. about.html
+========================= --><!DOCTYPE html><html><body><h1>About Newsora BD</h1></body></html><!-- =========================
+7. contact.html
+========================= --><!DOCTYPE html><html><body><h1>Contact Page</h1></body></html><!-- =========================
+8. search.html
+========================= --><!DOCTYPE html><html><body><h1>Search Page</h1></body></html><!-- =========================
+9. admin-ui.html
+========================= --><!DOCTYPE html><html><body><h1>Admin UI Layout</h1></body></html><!-- =========================
+10. 404.html
+========================= --><!DOCTYPE html><html><body><h1>404 Not Found</h1></body></html>
