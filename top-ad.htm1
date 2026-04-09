@@ -1,0 +1,78 @@
+<!-- =========================================
+Newsora BD - TOP AD SECTION (top-ad.html)
+Founder: ইমরান হোসাইন মাহি
+========================================= --><div class="top-ad-wrapper">  <!-- Top Leaderboard Ad -->  <div class="top-ad-box">
+    <a href="#" target="_blank">
+      <img src="https://picsum.photos/1200/120" alt="Top Banner Ad">
+    </a>
+  </div>  <!-- Double Ads -->  <div class="top-ad-double">
+    <div class="top-ad-small">
+      <a href="#"><img src="https://picsum.photos/580/100"></a>
+    </div>
+    <div class="top-ad-small">
+      <a href="#"><img src="https://picsum.photos/581/100"></a>
+    </div>
+  </div>  <!-- Scrolling Sponsor -->  <div class="top-ad-scroll">
+    <span>Sponsored:</span>
+    <marquee>আপনার বিজ্ঞাপন দিন | Newsora BD | যোগাযোগ করুন</marquee>
+  </div></div><style>
+.top-ad-wrapper{
+width:100%;
+background:white;
+padding:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.top-ad-box{
+margin-bottom:15px;
+text-align:center;
+}
+
+.top-ad-box img{
+max-width:100%;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.top-ad-box img:hover{
+transform:scale(1.02);
+}
+
+.top-ad-double{
+display:flex;
+gap:15px;
+margin-bottom:15px;
+}
+
+.top-ad-small{
+flex:1;
+}
+
+.top-ad-small img{
+width:100%;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,.12);
+}
+
+.top-ad-scroll{
+background:linear-gradient(90deg,#0b3c8c,#e11d2e);
+color:white;
+padding:8px 12px;
+border-radius:8px;
+font-weight:600;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.top-ad-scroll marquee{
+flex:1;
+}
+
+@media(max-width:768px){
+.top-ad-double{
+flex-direction:column;
+}
+}
+</style>
