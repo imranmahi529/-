@@ -1,0 +1,30 @@
+<!-- ==============================
+Newsora BD Logo Section (logo-section.html)
+================================ --><div class="logo-section">
+    <img src="logo.png" alt="Newsora BD Logo">
+</div><style>
+.logo-section{
+width:100%;
+padding:30px 0;
+text-align:center;
+background:linear-gradient(135deg,#f1f5ff,#eef2ff);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.logo-section img{
+width:420px;
+max-width:90%;
+filter:drop-shadow(0 20px 30px rgba(0,0,0,.25));
+transition:.4s;
+}
+
+.logo-section img:hover{
+transform:scale(1.05) rotateY(5deg);
+}
+
+@media(max-width:768px){
+.logo-section img{
+width:280px;
+}
+}
+</style>
